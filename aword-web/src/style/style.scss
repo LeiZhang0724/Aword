@@ -1,1 +1,38 @@
 @import '~antd/dist/antd.css';
+.card-container {
+  .flip {
+    cursor: pointer;
+    .front{
+    }
+    .back {
+    }
+  }
+}
+.matchGame-container {
+  width: 100%;
+  
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .active {
+      border: 1px solid green
+    }
+  }
+}
+
+.spellGame-container {
+  .spell-container {
+    .spell-main {
+      display: flex;
+      .spell-display{
+        display: flex;
+        .ant-input {
+        }
+        .spell-input-error {
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}

@@ -2,26 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import Carousel from './js/Carousel'
-import MatchGame from './js/MatchGame'
-import SpellGame from './js/SpellGame'
-
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { mockData, mockSentence } from './server/mockData'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
-			<Routes>
-				<Route path="/" element={<App />}>
-					<Route path="carousel" element={<Carousel data={mockData} />} />
-					<Route path="matchgame" element={<MatchGame data={mockData} />} />
-					<Route path="spellgame" element={<SpellGame data={mockData} />} />
-				</Route>
-			</Routes>
+			<App />
 		</Router>
-		{/* <App /> */}
 	</React.StrictMode>,
 	document.getElementById('root')
 )
